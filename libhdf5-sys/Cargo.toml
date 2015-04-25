@@ -1,0 +1,5 @@
+[package]
+name = "libhdf5-sys"
+version = "0.0.1"
+authors = ["Andrea Bedini <andrea@andreabedini.com>"]
+

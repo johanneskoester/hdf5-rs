@@ -1,0 +1,9 @@
+[package]
+name = "hdf5"
+version = "0.0.1"
+authors = ["Andrea Bedini <andrea@andreabedini.com>"]
+
+[dependencies.libhdf5-sys]
+path = "libhdf5-sys"
+version = "0.0.1"
+
