@@ -4,10 +4,10 @@ use std::path::Path;
 
 use libc::c_uint;
 
-use ffi::hid_t;
-use h5p::H5P_DEFAULT;
+use ffi::{hid_t, H5Fcreate, H5Fclose};
+use location::Location;
 
-use ffi::{H5Fcreate, H5Fclose};
+use h5p::H5P_DEFAULT;
 
 pub const H5F_ACC_RDONLY  : c_uint = 0x0000;
 pub const H5F_ACC_RDWR    : c_uint = 0x0001;
@@ -41,5 +41,11 @@ impl File {
 impl Drop for File {
     fn drop(&mut self) {
         unsafe { H5Fclose(self.handle) };
+    }
+}
+
+impl Location for File {
+    fn loc_id(&self) -> hid_t {
+        self.handle
     }
 }
