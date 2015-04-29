@@ -1,4 +1,10 @@
 language: rust
+rust:
+    - nightly
+    - beta
+
+env: RUST_TEST_THREADS=1
+
 addons:
     apt:
         packages:
