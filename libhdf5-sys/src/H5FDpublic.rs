@@ -207,7 +207,7 @@ impl ::std::default::Default for Struct_H5FDpublic_Unnamed2 {
     fn default() -> Struct_H5FDpublic_Unnamed2 { unsafe { ::std::mem::zeroed() } }
 }
 pub type H5FD_file_image_callbacks_t = Struct_H5FDpublic_Unnamed2;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5FDregister(cls: *const H5FD_class_t) -> hid_t;
     pub fn H5FDunregister(driver_id: hid_t) -> herr_t;

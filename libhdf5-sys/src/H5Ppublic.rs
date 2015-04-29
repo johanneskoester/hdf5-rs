@@ -62,7 +62,7 @@ pub const H5D_MPIO_NOT_SIMPLE_OR_SCALAR_DATASPACES: ::libc::c_uint = 16;
 pub const H5D_MPIO_NOT_CONTIGUOUS_OR_CHUNKED_DATASET: ::libc::c_uint = 32;
 pub const H5D_MPIO_FILTERS: ::libc::c_uint = 64;
 pub type H5D_mpio_no_collective_cause_t = Enum_H5D_mpio_no_collective_cause_t;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub static mut H5P_CLS_ROOT_ID_g: hid_t;
     pub static mut H5P_CLS_OBJECT_CREATE_ID_g: hid_t;
@@ -96,7 +96,7 @@ extern "C" {
     pub static mut H5P_LST_LINK_CREATE_ID_g: hid_t;
     pub static mut H5P_LST_LINK_ACCESS_ID_g: hid_t;
 }
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Pcreate_class(parent: hid_t, name: *const ::libc::c_char,
                            cls_create: H5P_cls_create_func_t,

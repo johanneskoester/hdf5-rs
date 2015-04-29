@@ -55,7 +55,7 @@ impl ::std::default::Default for Struct_H5G_stat_t {
     fn default() -> Struct_H5G_stat_t { unsafe { ::std::mem::zeroed() } }
 }
 pub type H5G_stat_t = Struct_H5G_stat_t;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Gcreate2(loc_id: hid_t, name: *const ::libc::c_char,
                       lcpl_id: hid_t, gcpl_id: hid_t, gapl_id: hid_t)

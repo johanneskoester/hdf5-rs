@@ -26,7 +26,7 @@ pub const H5S_SEL_HYPERSLABS: ::libc::c_int = 2;
 pub const H5S_SEL_ALL: ::libc::c_int = 3;
 pub const H5S_SEL_N: ::libc::c_int = 4;
 pub type H5S_sel_type = Enum_H5Spublic_Unnamed1;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Screate(_type: H5S_class_t) -> hid_t;
     pub fn H5Screate_simple(rank: ::libc::c_int, dims: *const hsize_t,

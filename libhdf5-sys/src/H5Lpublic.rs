@@ -114,7 +114,7 @@ pub type H5L_elink_traverse_t =
                                         fapl_id: hid_t,
                                         op_data: *mut ::libc::c_void)
                               -> herr_t>;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Lmove(src_loc: hid_t, src_name: *const ::libc::c_char,
                    dst_loc: hid_t, dst_name: *const ::libc::c_char,

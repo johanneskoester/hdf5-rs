@@ -6,4 +6,3 @@ authors = ["Andrea Bedini <andrea@andreabedini.com>"]
 [dependencies.libhdf5-sys]
 path = "libhdf5-sys"
 version = "0.0.1"
-

@@ -8,7 +8,7 @@ pub const H5R_MAXTYPE: ::libc::c_int = 2;
 pub type H5R_type_t = Enum_H5Rpublic_Unnamed1;
 pub type hobj_ref_t = haddr_t;
 pub type hdset_reg_ref_t = [::libc::c_uchar; 12usize];
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Rcreate(_ref: *mut ::libc::c_void, loc_id: hid_t,
                      name: *const ::libc::c_char, ref_type: H5R_type_t,

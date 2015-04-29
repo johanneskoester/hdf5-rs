@@ -51,7 +51,7 @@ pub type H5D_gather_func_t =
                                         dst_buf_bytes_used: size_t,
                                         op_data: *mut ::libc::c_void)
                               -> herr_t>;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Dcreate2(loc_id: hid_t, name: *const ::libc::c_char,
                       type_id: hid_t, space_id: hid_t, lcpl_id: hid_t,

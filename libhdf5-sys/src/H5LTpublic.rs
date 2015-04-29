@@ -7,7 +7,7 @@ pub const H5LT_C: ::libc::c_int = 1;
 pub const H5LT_FORTRAN: ::libc::c_int = 2;
 pub const H5LT_NO_LANG: ::libc::c_int = 3;
 pub type H5LT_lang_t = Enum_H5LT_lang_t;
-#[link(name = "hdf5_hl")]
+
 extern "C" {
     pub fn H5LTmake_dataset(loc_id: hid_t, dset_name: *const ::libc::c_char,
                             rank: ::libc::c_int, dims: *const hsize_t,

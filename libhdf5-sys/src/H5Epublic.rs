@@ -62,11 +62,11 @@ pub type H5E_walk1_t =
 pub type H5E_auto1_t =
     ::std::option::Option<extern "C" fn(client_data: *mut ::libc::c_void)
                               -> herr_t>;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub static mut H5E_ERR_CLS_g: hid_t;
 }
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Eregister_class(cls_name: *const ::libc::c_char,
                              lib_name: *const ::libc::c_char,

@@ -5,7 +5,7 @@ pub type H5DS_iterate_t =
                                         scale: hid_t,
                                         visitor_data: *mut ::libc::c_void)
                               -> herr_t>;
-#[link(name = "hdf5_hl")]
+
 extern "C" {
     pub fn H5DSattach_scale(did: hid_t, dsid: hid_t, idx: ::libc::c_uint)
      -> herr_t;

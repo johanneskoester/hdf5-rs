@@ -50,7 +50,7 @@ pub type Enum_H5F_libver_t = ::libc::c_uint;
 pub const H5F_LIBVER_EARLIEST: ::libc::c_uint = 0;
 pub const H5F_LIBVER_LATEST: ::libc::c_uint = 1;
 pub type H5F_libver_t = Enum_H5F_libver_t;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Fis_hdf5(filename: *const ::libc::c_char) -> htri_t;
     pub fn H5Fcreate(filename: *const ::libc::c_char, flags: ::libc::c_uint,

@@ -32,7 +32,7 @@ impl ::std::default::Default for Struct_H5_ih_info_t {
     fn default() -> Struct_H5_ih_info_t { unsafe { ::std::mem::zeroed() } }
 }
 pub type H5_ih_info_t = Struct_H5_ih_info_t;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5open() -> herr_t;
     pub fn H5close() -> herr_t;

@@ -114,7 +114,7 @@ impl ::std::default::Default for Struct_H5O_stat_t {
     fn default() -> Struct_H5O_stat_t { unsafe { ::std::mem::zeroed() } }
 }
 pub type H5O_stat_t = Struct_H5O_stat_t;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Oopen(loc_id: hid_t, name: *const ::libc::c_char, lapl_id: hid_t)
      -> hid_t;

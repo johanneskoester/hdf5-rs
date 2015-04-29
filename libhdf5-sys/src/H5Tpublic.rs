@@ -157,7 +157,7 @@ pub type H5T_conv_except_func_t =
                                         dst_buf: *mut ::libc::c_void,
                                         user_data: *mut ::libc::c_void)
                               -> H5T_conv_ret_t>;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub static mut H5T_IEEE_F32BE_g: hid_t;
     pub static mut H5T_IEEE_F32LE_g: hid_t;
@@ -245,7 +245,7 @@ extern "C" {
     pub static mut H5T_NATIVE_INT_FAST64_g: hid_t;
     pub static mut H5T_NATIVE_UINT_FAST64_g: hid_t;
 }
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Tcreate(_type: H5T_class_t, size: size_t) -> hid_t;
     pub fn H5Tcopy(type_id: hid_t) -> hid_t;

@@ -85,7 +85,7 @@ impl ::std::default::Default for Struct_H5Z_class1_t {
     fn default() -> Struct_H5Z_class1_t { unsafe { ::std::mem::zeroed() } }
 }
 pub type H5Z_class1_t = Struct_H5Z_class1_t;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Zregister(cls: *const ::libc::c_void) -> herr_t;
     pub fn H5Zunregister(id: H5Z_filter_t) -> herr_t;

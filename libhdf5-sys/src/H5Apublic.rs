@@ -26,7 +26,7 @@ pub type H5A_operator1_t =
                                         attr_name: *const ::libc::c_char,
                                         operator_data: *mut ::libc::c_void)
                               -> herr_t>;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Acreate2(loc_id: hid_t, attr_name: *const ::libc::c_char,
                       type_id: hid_t, space_id: hid_t, acpl_id: hid_t,

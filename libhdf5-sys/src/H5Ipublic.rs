@@ -25,7 +25,7 @@ pub type H5I_search_func_t =
     ::std::option::Option<extern "C" fn(obj: *mut ::libc::c_void, id: hid_t,
                                         key: *mut ::libc::c_void)
                               -> ::libc::c_int>;
-#[link(name = "hdf5")]
+
 extern "C" {
     pub fn H5Iregister(_type: H5I_type_t, object: *const ::libc::c_void)
      -> hid_t;
